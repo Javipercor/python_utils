@@ -1,0 +1,23 @@
+import random
+
+rand = None
+while True:
+    # generate a random number between 1 and 100
+    rand = random.randint(1, 100)
+    # if the random number is 10, break the execution
+    if rand != 10:
+        print(rand)
+    else:
+        break
+
+# this will only be executed if we get a 10 and break the loop
+print("We got a 10!")
+
+# -----------------------------------------------------------------------------
+
+import random
+
+while (rand := random.randint(1, 100)) != 10:
+    print(rand)
+
+print("We got a 10!")
